@@ -214,6 +214,10 @@ function initQuiz() {
             quizWelcome.classList.remove('hide');
             scoreElement.classList.add('hide');
             
+            // Reset the start button text and make it visible
+            startButton.innerText = 'Start Quiz';
+            startButton.classList.remove('hide');
+            
             // Remove this specific handler to prevent multiple listeners
             startButton.removeEventListener('click', restartQuizHandler);
         }, { once: true });
