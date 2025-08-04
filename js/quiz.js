@@ -60,7 +60,7 @@ function initQuiz() {
             ]
         },
         {
-            question: "What is Adrianna's place to visit?",
+            question: "What is Adrianna's favourite place to visit?",
             answers: [
                 { text: 'Venice', correct: false },
                 { text: 'Banff', correct: false },
