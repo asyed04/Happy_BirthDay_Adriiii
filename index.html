@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Adrianna!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <h1>Happy Birthday Adrianna! </h1>
+            <div class="balloon-container">
+                <!-- Balloons will be added via JavaScript -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Music Player Section -->
+    <section id="music-player" class="section" style="padding: 30px 0 0 0;">
+        <div class="container" style="max-width: 400px; margin: 0 auto;">
+            <div class="music-player">
+                <button id="music-prev" class="btn" title="Previous"><i class="fas fa-backward"></i></button>
+                <button id="music-toggle" class="btn" title="Play/Pause"><i class="fas fa-play"></i></button>
+                <button id="music-next" class="btn" title="Next"><i class="fas fa-forward"></i></button>
+                <span id="music-track-name" style="margin-left: 15px; font-weight: bold; color: var(--primary-color);">Loading...</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section id="countdown" class="section">
+        <div class="container">
+            <h2>Countdown to Your Special Day</h2>
+            <div id="countdown-timer">
+                <div class="time-block">
+                    <span id="days">00</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="time-block">
+                    <span id="hours">00</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="time-block">
+                    <span id="minutes">00</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="time-block">
+                    <span id="seconds">00</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2>Memories Together</h2>
+            <div class="gallery-container">
+                <!-- Photos will be added here -->
+                <div class="gallery-item">
+                    <img src="images/theGang2.jpeg" alt="Me and Adrianna">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/TheGang.jpeg" alt="The Gang">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/VC9.jpg" alt="VC9">
+                </div>
+                <!-- Add more as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="section">
+        <div class="container">
+            <h2>How Well Do You Know Adri?</h2>
+            <div id="quiz-container">
+                <div id="quiz-welcome" class="quiz-welcome">
+                    <h3>Test Your Knowledge!</h3>
+                    <p>Think you know Adrianna well? Take this fun quiz to find out how much you really know about her favorite things, hobbies, and more!It has some NPC content cuz she cant answer simple questions -_-. </p>
+                    <p class="quiz-emoji">🎮 📚 🎬 🍽️ 💖</p>
+                </div>
+                <div id="question-container" class="hide">
+                    <p id="question"></p>
+                    <div id="answer-buttons" class="btn-grid"></div>
+                </div>
+                <div class="controls">
+                    <button id="start-btn" class="start-btn btn">Start Quiz</button>
+                    <button id="next-btn" class="next-btn btn hide">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Wishes Animation Section -->
+    <section id="wishes" class="section">
+        <div class="container">
+            <h2>Birthday Wishes</h2>
+            <p class="section-intro">Heartfelt wishes from everyone who loves you!</p>
+            <div id="wishes-container">
+                <!-- Wishes will be animated here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Messages Section -->
+    <section id="videos" class="section">
+        <div class="container">
+            <h2>Messages From Loved Ones</h2>
+            <div class="video-container">
+                <!-- Video placeholders - replace with actual videos -->
+                <div class="video-item">
+                    <video controls>
+                        <source src="videos/Atresta&Zoro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="video-caption">From Atresta & Zoro</p>
+                </div>
+                <div class="video-item">
+                    <video controls>
+                        <source src="videos/Ayaan.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="video-caption">From Plank</p>
+                </div>
+                <div class="video-item">
+                    <video controls>
+                        <source src="videos/SameerBro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="video-caption">From Sameer</p>
+                </div>
+                <div class="video-item">
+                    <video controls>
+                        <source src="videos/Me.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="video-caption">From Me</p>
+                </div>
+                <!-- Add more as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cake Animation Section -->
+    <section id="cake" class="section">
+        <div class="container">
+            <h2>Make a Wish!</h2>
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                </div>
+                <button id="blow-candle" class="btn">Blow the Candle!</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Made with ❤️ for Adrianna's Birthday</p>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/fireworks.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/balloons.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/wishes.js"></script>
+    <script src="js/cake.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
